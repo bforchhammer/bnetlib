@@ -30,7 +30,7 @@ class Career implements ConfigurationInterface
     /**
      * @const string
      */
-    const RESOURCE_URL = '/api/d3/account/%s';
+    const RESOURCE_URL = '/api/d3/profile/%s';
 
     /**
      * @var int
@@ -40,12 +40,12 @@ class Career implements ConfigurationInterface
     /**
      * @var array
      */
-    protected $requiredArguments = array('account');
+    protected $requiredArguments = array('profile');
 
     /**
      * @var array
      */
-    protected $argumentAliases = array('account' => array('battletag', 'acc'));
+    protected $argumentAliases = array('profile' => array('battletag'));
 
     /**
      * @var array
