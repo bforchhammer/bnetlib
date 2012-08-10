@@ -16,7 +16,6 @@
 
 namespace bnetlib\Resource\Entity\D3\Shared;
 
-use bnetlib\Resource\Entity\EntityInterface;
 use bnetlib\Resource\Entity\ConsumeInterface;
 use bnetlib\ServiceLocator\ServiceLocatorInterface;
 
@@ -27,7 +26,7 @@ use bnetlib\ServiceLocator\ServiceLocatorInterface;
  * @copyright  2012 Eric Boh <cossish@gmail.com>
  * @license    http://coss.gitbub.com/bnetlib/license.html    MIT License
  */
-class Hero implements EntityInterface, ConsumeInterface
+class Hero implements ConsumeInterface
 {
     /**
      * @var array
@@ -50,6 +49,11 @@ class Hero implements EntityInterface, ConsumeInterface
     public function populate($data)
     {
         $this->data = $data;
+
+        $this->data['dateTime'] = new \DateTime(
+            '@' . round(($data['last-updated'] / 1000), 0),
+            new \DateTimeZone('UTC')
+        );
     }
 
     /**
@@ -109,15 +113,6 @@ class Hero implements EntityInterface, ConsumeInterface
     }
 
     /**
-     * @return string
-     */
-    public function getClassLocale()
-    {
-        // currently hardcoded, just a preview!
-        return 'SomeClassLocale';
-    }
-
-    /**
      * @return integer
      */
     public function getLevel()
@@ -155,6 +150,14 @@ class Hero implements EntityInterface, ConsumeInterface
     public function getLastUpdated()
     {
         return $this->data['last-updated'];
+    }
+
+    /**
+     * @return integer
+     */
+    public function getDateTime()
+    {
+        return $this->data['dateTime'];
     }
 
     /**

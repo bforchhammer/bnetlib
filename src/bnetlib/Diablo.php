@@ -26,9 +26,12 @@ use bnetlib\Resource\Entity\ConsumeInterface;
  * @copyright  2012 Eric Boh <cossish@gmail.com>
  * @license    http://coss.gitbub.com/bnetlib/license.html    MIT License
  *
+ * @method     mixed getArtisan(array|ConsumeInterface $args, array|ConsumeInterface $extra = null)
  * @method     mixed getCareer(array|ConsumeInterface $args, array|ConsumeInterface $extra = null)
+ * @method     mixed getFollower(array|ConsumeInterface $args, array|ConsumeInterface $extra = null)
  * @method     mixed getHero(array|ConsumeInterface $args, array|ConsumeInterface $extra = null)
  * @method     mixed getIcon(array|ConsumeInterface $args, array|ConsumeInterface $extra = null)
+ * @method     mixed getItem(array|ConsumeInterface $args, array|ConsumeInterface $extra = null)
  */
 class Diablo extends AbstractGame
 {
@@ -41,9 +44,12 @@ class Diablo extends AbstractGame
      * @inheritdoc
      */
     protected $resources = array(
-        'Career' => 'd3.entity.career',
-        'Hero'   => 'd3.entity.hero',
-        'Icon'   => 'shared.entity.image',
+        'Artisan'  => 'd3.entity.artisan',
+        'Career'   => 'd3.entity.career',
+        'Follower' => 'd3.entity.follower',
+        'Hero'     => 'd3.entity.hero',
+        'Icon'     => 'shared.entity.image',
+        'Item'     => 'd3.entity.item',
     );
 
     /**

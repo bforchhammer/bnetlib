@@ -16,6 +16,7 @@
 namespace bnetlib\Connection;
 
 use bnetlib\Exception\ClientException;
+use bnetlib\Exception\RuntimeException;
 use bnetlib\ServiceLocator\ServiceLocator;
 
 /**
@@ -64,17 +65,19 @@ class Stub extends AbstractConnection
             $status = 200;
 
             if (!isset($this->map)) {
-                $reflection = new \ReflectionClass($this->client);
-                $services   = $reflection->getProperty('services');
-                $services->setAccessible(true);
-                $services   = $services->getValue($this->client);
+                if (!is_callable(array($this->client, 'getRegisteredServices')) {
+                    throw new RuntimeException(sprintf(
+                        '%s must implement the method getRegisteredServices. ' .
+                        'Otherwise the stub adapter won\'t work.',
+                        get_class($this->client);
+                    ));
+                }
+
+                $this->map = array();
+                $services  = $this->client->getRegisteredServices();
 
                 foreach ($services as $service => $class) {
                     if (strpos($service, '.config.') !== false) {
-                        if (!isset($this->map)) {
-                            $this->map = array();
-                        }
-
                         $this->map[$class] = str_replace('.config.', '/', $service);
                     }
                 }
@@ -95,8 +98,6 @@ class Stub extends AbstractConnection
 
                 if (file_exists($fullname)) {
                     $content = file_get_contents($fullname);
-                } elseif (file_exists($fullname . '.gz')) {
-                    $content = gzfile($fullname . '.gz');
                 } else {
                     $status  = 404;
                     $content = '{"status":"nok", "reason": "When in doubt, blow it up. (page not found)"}';
@@ -195,6 +196,6 @@ class Stub extends AbstractConnection
             }
         }
 
-        parent::setOptions($option);
+        return parent::setOptions($option);
     }
 }

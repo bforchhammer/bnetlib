@@ -1,0 +1,158 @@
+{
+    "content": {
+        "bgRecord": [
+            {
+                "rank": 1,
+                "bgRating": 3935,
+                "wins": 39,
+                "losses": 7,
+                "played": 46,
+                "realm": {
+                    "name": "Stormscale",
+                    "slug": "stormscale",
+                    "battlegroup": "Cyclone \/ Wirbelsturm"
+                },
+                "battlegroup": {
+                    "name": "Cyclone \/ Wirbelsturm",
+                    "slug": "cyclone-wirbelsturm"
+                },
+                "character": {
+                    "name": "Skypepvptop",
+                    "realm": "Stormscale",
+                    "battlegroup": "Cyclone \/ Wirbelsturm",
+                    "class": 7,
+                    "race": 8,
+                    "gender": 1,
+                    "level": 85,
+                    "achievementPoints": 1020,
+                    "thumbnail": "stormscale\/2\/81697538-avatar.jpg"
+                },
+                "lastModified": 1340399537000
+            },
+            {
+                "rank": 2,
+                "bgRating": 3780,
+                "wins": 304,
+                "losses": 56,
+                "played": 360,
+                "realm": {
+                    "name": "Gordunni",
+                    "slug": "gordunni",
+                    "battlegroup": "\u0428\u043a\u0432\u0430\u043b"
+                },
+                "battlegroup": {
+                    "name": "\u0428\u043a\u0432\u0430\u043b",
+                    "slug": "\u0448\u043a\u0432\u0430\u043b"
+                },
+                "character": {
+                    "name": "\u0414\u043e\u043d\u0442\u0441\u043b\u0438\u043f",
+                    "realm": "Gordunni",
+                    "battlegroup": "\u0428\u043a\u0432\u0430\u043b",
+                    "class": 2,
+                    "race": 1,
+                    "gender": 1,
+                    "level": 85,
+                    "achievementPoints": 9990,
+                    "thumbnail": "gordunni\/110\/16505198-avatar.jpg"
+                },
+                "lastModified": 1337790996000
+            },
+            {
+                "rank": 3,
+                "bgRating": 3461,
+                "wins": 0,
+                "losses": 0,
+                "played": 0,
+                "realm": {
+                    "name": "Gordunni",
+                    "slug": "gordunni",
+                    "battlegroup": "\u0428\u043a\u0432\u0430\u043b"
+                },
+                "battlegroup": {
+                    "name": "\u0428\u043a\u0432\u0430\u043b",
+                    "slug": "\u0448\u043a\u0432\u0430\u043b"
+                },
+                "character": {
+                    "name": "\u041d\u0435\u0430\u0434\u0435\u043a\u0432\u0430\u0442\u043f\u0440\u043e",
+                    "realm": "Gordunni",
+                    "battlegroup": "\u0428\u043a\u0432\u0430\u043b",
+                    "class": 1,
+                    "race": 1,
+                    "gender": 0,
+                    "level": 85,
+                    "achievementPoints": 3525,
+                    "thumbnail": "gordunni\/252\/48841212-avatar.jpg"
+                },
+                "lastModified": 1330090840000
+            },
+            {
+                "rank": 4,
+                "bgRating": 3171,
+                "wins": 222,
+                "losses": 57,
+                "played": 279,
+                "realm": {
+                    "name": "Deathweaver",
+                    "slug": "deathweaver",
+                    "battlegroup": "\u0412\u0438\u0445\u0440\u044c"
+                },
+                "battlegroup": {
+                    "name": "\u0412\u0438\u0445\u0440\u044c",
+                    "slug": "\u0432\u0438\u0445\u0440\u044c"
+                },
+                "character": {
+                    "name": "\u0425\u0438\u0440\u0443\u043a\u043e",
+                    "realm": "Deathweaver",
+                    "battlegroup": "\u0412\u0438\u0445\u0440\u044c",
+                    "class": 5,
+                    "race": 9,
+                    "gender": 0,
+                    "level": 85,
+                    "achievementPoints": 15190,
+                    "thumbnail": "deathweaver\/60\/64532284-avatar.jpg"
+                },
+                "lastModified": 1340469002000
+            },
+            {
+                "rank": 5,
+                "bgRating": 3148,
+                "wins": 96,
+                "losses": 24,
+                "played": 120,
+                "realm": {
+                    "name": "Blackrock",
+                    "slug": "blackrock",
+                    "battlegroup": "Glutsturm \/ Emberstorm"
+                },
+                "battlegroup": {
+                    "name": "Glutsturm \/ Emberstorm",
+                    "slug": "glutsturm-emberstorm"
+                },
+                "character": {
+                    "name": "Aminurio",
+                    "realm": "Blackrock",
+                    "battlegroup": "Glutsturm \/ Emberstorm",
+                    "class": 4,
+                    "race": 5,
+                    "gender": 0,
+                    "level": 85,
+                    "achievementPoints": 6795,
+                    "thumbnail": "blackrock\/199\/65537223-avatar.jpg"
+                },
+                "lastModified": 1340329831000
+            }
+        ]
+    },
+    "headers": {
+        "Date": "Sun, 24 Jun 2012 01:49:31 GMT",
+        "Server": "Apache",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Retry-After": "600",
+        "Content-Language": "en-GB",
+        "Vary": "Accept-Encoding",
+        "Content-Encoding": "gzip",
+        "Content-Length": "694",
+        "Connection": "close",
+        "Content-Type": "application\/json;charset=utf-8"
+    }
+}

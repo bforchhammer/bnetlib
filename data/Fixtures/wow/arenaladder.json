@@ -1,0 +1,323 @@
+{
+    "content": {
+        "arenateam": [
+            {
+                "realm": "Archimonde",
+                "ranking": 1,
+                "rating": 2412,
+                "teamsize": 2,
+                "created": "2011-12-16",
+                "name": "On clean le ladder",
+                "gamesPlayed": 0,
+                "gamesWon": 0,
+                "gamesLost": 0,
+                "sessionGamesPlayed": 203,
+                "sessionGamesWon": 187,
+                "sessionGamesLost": 16,
+                "lastSessionRanking": 0,
+                "side": "horde",
+                "currentWeekRanking": 0,
+                "members": [
+                    {
+                        "character": {
+                            "name": "H\u00f8ty",
+                            "realm": "Archimonde",
+                            "battlegroup": "Cataclysme \/ Cataclysm",
+                            "class": 11,
+                            "race": 6,
+                            "gender": 1,
+                            "level": 85,
+                            "achievementPoints": 620,
+                            "thumbnail": "archimonde\/208\/67381456-avatar.jpg"
+                        },
+                        "rank": 0,
+                        "gamesPlayed": 0,
+                        "gamesWon": 0,
+                        "gamesLost": 0,
+                        "sessionGamesPlayed": 0,
+                        "sessionGamesWon": 0,
+                        "sessionGamesLost": 0,
+                        "personalRating": 1000
+                    },
+                    {
+                        "character": {
+                            "name": "Hotyzx",
+                            "realm": "Archimonde",
+                            "battlegroup": "Cataclysme \/ Cataclysm",
+                            "class": 5,
+                            "race": 5,
+                            "gender": 0,
+                            "level": 85,
+                            "achievementPoints": 6320,
+                            "thumbnail": "archimonde\/113\/65375601-avatar.jpg"
+                        },
+                        "rank": 1,
+                        "gamesPlayed": 0,
+                        "gamesWon": 0,
+                        "gamesLost": 0,
+                        "sessionGamesPlayed": 0,
+                        "sessionGamesWon": 0,
+                        "sessionGamesLost": 0,
+                        "personalRating": 1000
+                    }
+                ]
+            },
+            {
+                "realm": "Archimonde",
+                "ranking": 2,
+                "rating": 2410,
+                "teamsize": 2,
+                "created": "2011-12-07",
+                "name": "Xyde Scr\u00e6m What Else",
+                "gamesPlayed": 0,
+                "gamesWon": 0,
+                "gamesLost": 0,
+                "sessionGamesPlayed": 48,
+                "sessionGamesWon": 43,
+                "sessionGamesLost": 5,
+                "lastSessionRanking": 0,
+                "side": "horde",
+                "currentWeekRanking": 0,
+                "members": [
+                    {
+                        "character": {
+                            "name": "Skr\u00eemz",
+                            "realm": "Archimonde",
+                            "battlegroup": "Cataclysme \/ Cataclysm",
+                            "class": 4,
+                            "race": 5,
+                            "gender": 0,
+                            "level": 85,
+                            "achievementPoints": 3345,
+                            "thumbnail": "archimonde\/231\/62125543-avatar.jpg"
+                        },
+                        "rank": 0,
+                        "gamesPlayed": 0,
+                        "gamesWon": 0,
+                        "gamesLost": 0,
+                        "sessionGamesPlayed": 0,
+                        "sessionGamesWon": 0,
+                        "sessionGamesLost": 0,
+                        "personalRating": 1000
+                    }
+                ]
+            },
+            {
+                "realm": "Crushridge",
+                "ranking": 3,
+                "rating": 2407,
+                "teamsize": 2,
+                "created": "2011-12-09",
+                "name": "blueslidepark",
+                "gamesPlayed": 0,
+                "gamesWon": 0,
+                "gamesLost": 0,
+                "sessionGamesPlayed": 52,
+                "sessionGamesWon": 49,
+                "sessionGamesLost": 3,
+                "lastSessionRanking": 0,
+                "side": "horde",
+                "currentWeekRanking": 1,
+                "members": [
+                    {
+                        "character": {
+                            "name": "Ne\u00f9ro",
+                            "realm": "Crushridge",
+                            "battlegroup": "Cataclysme \/ Cataclysm",
+                            "class": 5,
+                            "race": 5,
+                            "gender": 0,
+                            "level": 85,
+                            "achievementPoints": 4350,
+                            "thumbnail": "crushridge\/81\/59090257-avatar.jpg"
+                        },
+                        "rank": 1,
+                        "gamesPlayed": 0,
+                        "gamesWon": 0,
+                        "gamesLost": 0,
+                        "sessionGamesPlayed": 52,
+                        "sessionGamesWon": 49,
+                        "sessionGamesLost": 3,
+                        "personalRating": 2407
+                    },
+                    {
+                        "character": {
+                            "name": "Ezyagg",
+                            "realm": "Crushridge",
+                            "battlegroup": "Cataclysme \/ Cataclysm",
+                            "class": 8,
+                            "race": 5,
+                            "gender": 0,
+                            "level": 85,
+                            "achievementPoints": 5160,
+                            "thumbnail": "crushridge\/60\/57167676-avatar.jpg"
+                        },
+                        "rank": 0,
+                        "gamesPlayed": 0,
+                        "gamesWon": 0,
+                        "gamesLost": 0,
+                        "sessionGamesPlayed": 52,
+                        "sessionGamesWon": 49,
+                        "sessionGamesLost": 3,
+                        "personalRating": 2407
+                    }
+                ]
+            },
+            {
+                "realm": "Deathwing",
+                "ranking": 4,
+                "rating": 2384,
+                "teamsize": 2,
+                "created": "2011-12-17",
+                "name": "Cant touch me",
+                "gamesPlayed": 0,
+                "gamesWon": 0,
+                "gamesLost": 0,
+                "sessionGamesPlayed": 90,
+                "sessionGamesWon": 74,
+                "sessionGamesLost": 16,
+                "lastSessionRanking": 0,
+                "side": "horde",
+                "currentWeekRanking": 2,
+                "members": [
+                    {
+                        "character": {
+                            "name": "F\u00efllzor",
+                            "realm": "Deathwing",
+                            "battlegroup": "Cataclysme \/ Cataclysm",
+                            "class": 5,
+                            "race": 5,
+                            "gender": 1,
+                            "level": 85,
+                            "achievementPoints": 14745,
+                            "thumbnail": "deathwing\/71\/52380231-avatar.jpg"
+                        },
+                        "rank": 0,
+                        "gamesPlayed": 0,
+                        "gamesWon": 0,
+                        "gamesLost": 0,
+                        "sessionGamesPlayed": 86,
+                        "sessionGamesWon": 74,
+                        "sessionGamesLost": 12,
+                        "personalRating": 2398
+                    },
+                    {
+                        "character": {
+                            "name": "Paralove",
+                            "realm": "Deathwing",
+                            "battlegroup": "Cataclysme \/ Cataclysm",
+                            "class": 8,
+                            "race": 9,
+                            "gender": 1,
+                            "level": 85,
+                            "achievementPoints": 12085,
+                            "thumbnail": "deathwing\/20\/53429012-avatar.jpg"
+                        },
+                        "rank": 1,
+                        "gamesPlayed": 0,
+                        "gamesWon": 0,
+                        "gamesLost": 0,
+                        "sessionGamesPlayed": 65,
+                        "sessionGamesWon": 55,
+                        "sessionGamesLost": 10,
+                        "personalRating": 2396
+                    }
+                ]
+            },
+            {
+                "realm": "Archimonde",
+                "ranking": 5,
+                "rating": 2338,
+                "teamsize": 2,
+                "created": "2011-12-16",
+                "name": "Arboriculteurs fruitiers",
+                "gamesPlayed": 0,
+                "gamesWon": 0,
+                "gamesLost": 0,
+                "sessionGamesPlayed": 115,
+                "sessionGamesWon": 99,
+                "sessionGamesLost": 16,
+                "lastSessionRanking": 0,
+                "side": "horde",
+                "currentWeekRanking": 3,
+                "members": [
+                    {
+                        "character": {
+                            "name": "Zasm\u00fa",
+                            "realm": "Archimonde",
+                            "battlegroup": "Cataclysme \/ Cataclysm",
+                            "class": 7,
+                            "race": 2,
+                            "gender": 0,
+                            "level": 85,
+                            "achievementPoints": 7565,
+                            "thumbnail": "archimonde\/31\/65370399-avatar.jpg"
+                        },
+                        "rank": 1,
+                        "gamesPlayed": 0,
+                        "gamesWon": 0,
+                        "gamesLost": 0,
+                        "sessionGamesPlayed": 97,
+                        "sessionGamesWon": 84,
+                        "sessionGamesLost": 13,
+                        "personalRating": 2392
+                    },
+                    {
+                        "character": {
+                            "name": "R\u00edmen",
+                            "realm": "Archimonde",
+                            "battlegroup": "Cataclysme \/ Cataclysm",
+                            "class": 4,
+                            "race": 5,
+                            "gender": 0,
+                            "level": 85,
+                            "achievementPoints": 9265,
+                            "thumbnail": "archimonde\/227\/65376227-avatar.jpg"
+                        },
+                        "rank": 0,
+                        "gamesPlayed": 0,
+                        "gamesWon": 0,
+                        "gamesLost": 0,
+                        "sessionGamesPlayed": 69,
+                        "sessionGamesWon": 58,
+                        "sessionGamesLost": 11,
+                        "personalRating": 2305
+                    },
+                    {
+                        "character": {
+                            "name": "Omy\u00e4",
+                            "realm": "Archimonde",
+                            "battlegroup": "Cataclysme \/ Cataclysm",
+                            "class": 7,
+                            "race": 2,
+                            "gender": 0,
+                            "level": 85,
+                            "achievementPoints": 6145,
+                            "thumbnail": "archimonde\/46\/66255918-avatar.jpg"
+                        },
+                        "rank": 1,
+                        "gamesPlayed": 0,
+                        "gamesWon": 0,
+                        "gamesLost": 0,
+                        "sessionGamesPlayed": 18,
+                        "sessionGamesWon": 15,
+                        "sessionGamesLost": 3,
+                        "personalRating": 1900
+                    }
+                ]
+            }
+        ]
+    },
+    "headers": {
+        "Date": "Sun, 24 Jun 2012 01:49:25 GMT",
+        "Server": "Apache",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Retry-After": "600",
+        "Content-Language": "en-GB",
+        "Vary": "Accept-Encoding",
+        "Content-Encoding": "gzip",
+        "Content-Length": "902",
+        "Connection": "close",
+        "Content-Type": "application\/json;charset=utf-8"
+    }
+}

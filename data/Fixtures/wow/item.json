@@ -1,0 +1,61 @@
+{
+    "content": {
+        "id": 38268,
+        "description": "Give to a Friend",
+        "name": "Spare Hand",
+        "icon": "inv_gauntlets_09",
+        "stackable": 1,
+        "itemBind": 0,
+        "bonusStats": [
+
+        ],
+        "itemSpells": [
+
+        ],
+        "buyPrice": 12,
+        "itemClass": 2,
+        "itemSubClass": 14,
+        "containerSlots": 0,
+        "weaponInfo": {
+            "damage": {
+                "min": 1,
+                "max": 2
+            },
+            "weaponSpeed": 2.5,
+            "dps": 0.6
+        },
+        "inventoryType": 13,
+        "equippable": true,
+        "itemLevel": 1,
+        "maxCount": 0,
+        "maxDurability": 16,
+        "minFactionId": 0,
+        "minReputation": 0,
+        "quality": 0,
+        "sellPrice": 2,
+        "requiredSkill": 0,
+        "requiredLevel": 70,
+        "requiredSkillRank": 0,
+        "itemSource": {
+            "sourceId": 16034,
+            "sourceType": "CREATURE_PICKPOCKET"
+        },
+        "baseArmor": 0,
+        "hasSockets": false,
+        "isAuctionable": true,
+        "armor": 0,
+        "displayInfoId": 50561
+    },
+    "headers": {
+        "Date": "Sun, 24 Jun 2012 01:49:30 GMT",
+        "Server": "Apache",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Retry-After": "600",
+        "Content-Language": "en-GB",
+        "Vary": "Accept-Encoding",
+        "Content-Encoding": "gzip",
+        "Content-Length": "404",
+        "Connection": "close",
+        "Content-Type": "application\/json;charset=utf-8"
+    }
+}

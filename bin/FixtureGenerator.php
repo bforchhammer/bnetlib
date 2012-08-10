@@ -12,38 +12,11 @@
  * @license    http://coss.gitbub.com/bnetlib/license.html    MIT License
  */
 
-$useGzip = (isset($argv[1]) && in_array(ltrim($argv[1], '-'), array('gz', 'gzip', 'compress')));
-
 if (!file_exists(__DIR__ . '/FixtureConfig.php')) {
     die('Unable to load config file.');
 }
 
 $config = include __DIR__ . '/FixtureConfig.php';
-
-if ($useGzip === true) {
-    if (!extension_loaded('zlib')) {
-        echo 'Please enable zlib' . PHP_EOL;
-        exit(1);
-    }
-
-    echo 'Compressing JSON files...' . PHP_EOL;
-
-    foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator($config['path'])) as $item) {
-        if (!$item->isFile() || $item->getExtension() !== 'json') {
-            continue;
-        }
-
-        printf('> gzip: %s' . PHP_EOL, $item->getFilename());
-
-        $content  = json_decode(file_get_contents($item->getRealPath()), true);
-
-        $gz = gzopen($item->getRealPath() . '.gz', 'w9');
-        gzwrite($gz, json_encode($content));
-        gzclose($gz);
-    }
-
-    exit();
-}
 
 if (!file_exists(dirname(__DIR__) . '/tests/_autoload.php')) {
     die('Unable to load autoloader.');

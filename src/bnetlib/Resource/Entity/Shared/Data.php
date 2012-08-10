@@ -89,15 +89,6 @@ class Data implements EntityInterface, \Iterator
     }
 
     /**
-     * @see    \Countable
-     * @return integer
-     */
-    public function count()
-    {
-        return $this->count;
-    }
-
-    /**
      * @see \Iterator
      */
     public function rewind()

@@ -49,8 +49,22 @@ class ServiceLocator implements ServiceLocatorInterface, LocaleAwareInterface
         'd3.config.career'                          => 'bnetlib\Resource\Config\D3\Career',
         'd3.config.hero'                            => 'bnetlib\Resource\Config\D3\Hero',
         'd3.entity.career'                          => 'bnetlib\Resource\Entity\D3\Career',
+        'd3.entity.career.act'                      => 'bnetlib\Resource\Entity\D3\Career\Act',
+        'd3.entity.career.artisan'                  => 'bnetlib\Resource\Entity\D3\Career\Artisan',
+        'd3.entity.career.artisans'                 => 'bnetlib\Resource\Entity\D3\Career\Artisans',
+        'd3.entity.career.heroes'                   => 'bnetlib\Resource\Entity\D3\Career\Heroes',
+        'd3.entity.career.kills'                    => 'bnetlib\Resource\Entity\D3\Career\Kills',
+        'd3.entity.career.played'                   => 'bnetlib\Resource\Entity\D3\Career\Played',
+        'd3.entity.career.progression'              => 'bnetlib\Resource\Entity\D3\Career\Progression',
+        'd3.entity.fallenhero.death'                => 'bnetlib\Resource\Entity\D3\FallenHero\Death',
+        'd3.entity.fallenhero.hero'                 => 'bnetlib\Resource\Entity\D3\FallenHero\Hero',
+        'd3.entity.fallenhero.kills'                => 'bnetlib\Resource\Entity\D3\FallenHero\Kills',
         'd3.entity.hero'                            => 'bnetlib\Resource\Entity\D3\Hero',
+        'd3.entity.hero.items'                      => 'bnetlib\Resource\Entity\D3\Hero\Items',
+        'd3.entity.hero.stats'                      => 'bnetlib\Resource\Entity\D3\Hero\Stats',
         'd3.entity.shared.hero'                     => 'bnetlib\Resource\Entity\D3\Shared\Hero',
+        'd3.entity.shared.item'                     => 'bnetlib\Resource\Entity\D3\Shared\Item',
+        'd3.entity.shared.kills'                    => 'bnetlib\Resource\Entity\D3\Shared\Kills',
         'shared.entity.data'                        => 'bnetlib\Resource\Entity\Shared\Data',
         'shared.entity.fallback'                    => 'bnetlib\Resource\Entity\Shared\Fallback',
         'shared.entity.image'                       => 'bnetlib\Resource\Entity\Shared\Image',
@@ -270,5 +284,15 @@ class ServiceLocator implements ServiceLocatorInterface, LocaleAwareInterface
         }
 
         return $this;
+    }
+
+    /**
+     * Returns every registered service in an array.
+     *
+     * @return array
+     */
+    public function getRegisteredServices()
+    {
+        return $this->services;
     }
 }

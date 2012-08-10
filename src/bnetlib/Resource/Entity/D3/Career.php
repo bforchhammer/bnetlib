@@ -26,8 +26,18 @@ use bnetlib\ServiceLocator\ServiceLocatorInterface;
  * @copyright  2012 Eric Boh <cossish@gmail.com>
  * @license    http://coss.gitbub.com/bnetlib/license.html    MIT License
  */
-class Career implements EntityInterface
+class Career implements EntityInterface, \IteratorAggregate
 {
+    /**
+     * @var integer
+     */
+    protected $position = 0;
+
+    /**
+     * @var array
+     */
+    protected $index = array();
+
     /**
      * @var array
      */
@@ -47,11 +57,13 @@ class Career implements EntityInterface
      * @var array
      */
     protected $services = array(
-        'heroes'      => 'shared.entity.listdata',
-        'kills'       => 'd3.entity.career.kills',
-        'time-played' => 'd3.entity.career.played',
-        'artisan'     => 'd3.entity.career.artisan',
-        'progression' => 'd3.entity.career.progression',
+        'artisans'          => 'd3.entity.career.artisans',
+        'hardcore-artisans' => 'd3.entity.career.artisans',
+        'heroes'            => 'd3.entity.career.heroes',
+        'fallen-heroes'     => 'd3.entity.career.heroes',
+        'kills'             => 'd3.entity.career.kills',
+        'time-played'       => 'd3.entity.career.played',
+        'progression'       => 'd3.entity.career.progression',
     );
 
     /**
@@ -70,6 +82,11 @@ class Career implements EntityInterface
                 $this->data[$key]->populate($data[$key]);
             }
         }
+
+        $this->data['dateTime'] = new \DateTime(
+            '@' . round(($data['last-updated'] / 1000), 0),
+            new \DateTimeZone('UTC')
+        );
     }
 
     /**
@@ -109,15 +126,15 @@ class Career implements EntityInterface
      */
     public function getFallenHeroes()
     {
-        return $this->data['heroes'];
+        return $this->data['fallen-heroes'];
     }
 
     /**
-     * @return Hero
+     * @return Shared\Hero
      */
     public function getLastHeroPlayed()
     {
-        return $this->data['heroes']->getLastPlayed();
+        return $this->data['heroes'][$this->data['last-hero-played']];
     }
 
     /**
@@ -125,7 +142,7 @@ class Career implements EntityInterface
      */
     public function getArtisans()
     {
-        return $this->data['artisan'];
+        return $this->data['artisans'];
     }
 
     /**
@@ -133,7 +150,7 @@ class Career implements EntityInterface
      */
     public function getHardcoreArtisans()
     {
-        return $this->data['artisan'];
+        return $this->data['hardcore-artisans'];
     }
 
     /**
@@ -166,5 +183,22 @@ class Career implements EntityInterface
     public function getLastUpdated()
     {
         return $this->data['last-updated'];
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateTime()
+    {
+        return $this->data['dateTime'];
+    }
+
+    /**
+     * @see    \IteratorAggregate
+     * @return Career\Heroes
+     */
+    public function getIterator()
+    {
+        return $this->data['heroes'];
     }
 }
