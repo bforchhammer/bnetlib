@@ -48,7 +48,7 @@ class Diablo extends AbstractGame
         'Career'   => 'd3.entity.career',
         'Follower' => 'd3.entity.follower',
         'Hero'     => 'd3.entity.hero',
-    //  'Icon'     => 'shared.entity.image',
+        'Icon'     => 'd3.entity.image',
         'Item'     => 'd3.entity.item',
     );
 

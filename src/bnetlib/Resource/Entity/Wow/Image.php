@@ -14,9 +14,9 @@
  * @license    http://coss.gitbub.com/bnetlib/license.html    MIT License
  */
 
-namespace bnetlib\Resource\Entity\Shared;
+namespace bnetlib\Resource\Entity\Wow;
 
-use bnetlib\Resource\Entity\EntityInterface;
+use bnetlib\Resource\Entity\Shared\Image as BaseImage;
 use bnetlib\ServiceLocator\ServiceLocatorInterface;
 
 /**
@@ -26,13 +26,13 @@ use bnetlib\ServiceLocator\ServiceLocatorInterface;
  * @copyright  2012 Eric Boh <cossish@gmail.com>
  * @license    http://coss.gitbub.com/bnetlib/license.html    MIT License
  */
-class Image implements EntityInterface
+class Image extends BaseImage
 {
     /**#@+
      * @var string
      */
-    protected $fileExtension      = '';
-    protected $fileExtensionRegex = '';
+    protected $fileExtension      = '.jpg';
+    protected $fileExtensionRegex = '\.(jpeg|jpg)';
     /**#@-*/
 
     /**

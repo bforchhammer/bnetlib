@@ -73,7 +73,7 @@ class WorldOfWarcraft extends AbstractGame
         'GuildAchievements'       => 'wow.entity.achievements',
         'GuildPerks'              => 'wow.entity.guildperks',
         'GuildRewards'            => 'wow.entity.guildrewards',
-        'Icon'                    => 'shared.entity.image',
+        'Icon'                    => 'wow.entity.image',
         'Item'                    => 'wow.entity.item',
         'ItemClasses'             => 'wow.entity.itemclasses',
         'ItemSet'                 => 'wow.entity.itemset',
@@ -81,7 +81,7 @@ class WorldOfWarcraft extends AbstractGame
         'RatedBattlegroundLadder' => 'wow.entity.ratedbattlegroundladder',
         'Realms'                  => 'wow.entity.realms',
         'Recipe'                  => 'wow.entity.recipe',
-        'Thumbnail'               => 'shared.entity.image',
+        'Thumbnail'               => 'wow.entity.image',
     );
 
     /**
