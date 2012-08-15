@@ -12,7 +12,8 @@ Requirements
 bnetlib requires PHP 5.3.3+ and depends on (one of) the following HTTP libraries:
 * Buzz Library ([`Buzz`](https://github.com/kriswallsmith/Buzz))
 * Zend Framework ([`Zend\Http`](https://github.com/zendframework/zf2))
-* *Aura Framework ([`Aura.Http`](https://github.com/auraphp/Aura.Http)) – currently broken due to latest master changes.*
+
+> **Note:** The Aura adapter has been removed and will be reintroduced later.
 
 
 Features
@@ -33,9 +34,8 @@ Composer
     $ php composer.phar install
 
 
-> **Note:** If you want to use the Aura or Buzz adapter, you have to add it to the composer.json file. You can do this by running the `require` command.
+> **Note:** If you want to use the Buzz adapter, you have to add it to the composer.json file. You can do this by running the `require` command.
 
-    $ php composer.phar require Aura/Http:dev-1.0.0-beta2
     $ php composer.phar require kriswallsmith/buzz:0.6
 
 

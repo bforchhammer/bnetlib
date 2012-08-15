@@ -46,8 +46,51 @@ class ServiceLocator implements ServiceLocatorInterface, LocaleAwareInterface
      * @var array
      */
     protected $services = array(
+        'd3.config.career'                          => 'bnetlib\Resource\Config\D3\Career',
+        'd3.config.follower'                        => 'bnetlib\Resource\Config\D3\Follower',
+        'd3.config.hero'                            => 'bnetlib\Resource\Config\D3\Hero',
+        'd3.config.item'                            => 'bnetlib\Resource\Config\D3\Item',
+        'd3.entity.career'                          => 'bnetlib\Resource\Entity\D3\Career',
+        'd3.entity.career.artisan'                  => 'bnetlib\Resource\Entity\D3\Career\Artisan',
+        'd3.entity.career.artisans'                 => 'bnetlib\Resource\Entity\D3\Career\Artisans',
+        'd3.entity.career.heroes'                   => 'bnetlib\Resource\Entity\D3\Career\Heroes',
+        'd3.entity.career.kills'                    => 'bnetlib\Resource\Entity\D3\Career\Kills',
+        'd3.entity.career.played'                   => 'bnetlib\Resource\Entity\D3\Career\Played',
+        'd3.entity.fallenhero.death'                => 'bnetlib\Resource\Entity\D3\FallenHero\Death',
+        'd3.entity.fallenhero.hero'                 => 'bnetlib\Resource\Entity\D3\FallenHero\Hero',
+        'd3.entity.fallenhero.heroes'               => 'bnetlib\Resource\Entity\D3\FallenHero\Heroes',
+        'd3.entity.follower'                        => 'bnetlib\Resource\Entity\D3\Follower',
+        'd3.entity.follower.items'                  => 'bnetlib\Resource\Entity\D3\Follower\Items',
+        'd3.entity.follower.skills'                 => 'bnetlib\Resource\Entity\D3\Follower\Skills',
+        'd3.entity.follower.stats'                  => 'bnetlib\Resource\Entity\D3\Follower\Stats',
+        'd3.entity.hero'                            => 'bnetlib\Resource\Entity\D3\Hero',
+        'd3.entity.hero.activeskill'                => 'bnetlib\Resource\Entity\D3\Hero\ActiveSkill',
+        'd3.entity.hero.follower'                   => 'bnetlib\Resource\Entity\D3\Hero\Follower',
+        'd3.entity.hero.followers'                  => 'bnetlib\Resource\Entity\D3\Hero\Followers',
+        'd3.entity.hero.item'                       => 'bnetlib\Resource\Entity\D3\Hero\Item',
+        'd3.entity.hero.items'                      => 'bnetlib\Resource\Entity\D3\Hero\Items',
+        'd3.entity.hero.passiveskill'               => 'bnetlib\Resource\Entity\D3\Hero\PassiveSkill',
+        'd3.entity.hero.rune'                       => 'bnetlib\Resource\Entity\D3\Hero\Rune',
+        'd3.entity.hero.skillentry'                 => 'bnetlib\Resource\Entity\D3\Hero\SkillEntry',
+        'd3.entity.hero.skills'                     => 'bnetlib\Resource\Entity\D3\Hero\Skills',
+        'd3.entity.hero.stats'                      => 'bnetlib\Resource\Entity\D3\Hero\Stats',
+        'd3.entity.item'                            => 'bnetlib\Resource\Entity\D3\Item',
+        'd3.entity.item.attributesraw'              => 'bnetlib\Resource\Entity\D3\Item\AttributesRaw',
+        'd3.entity.item.attributestat'              => 'bnetlib\Resource\Entity\D3\Item\AttributeStat',
+        'd3.entity.item.salvage'                    => 'bnetlib\Resource\Entity\D3\Item\Salvage',
+        'd3.entity.item.salvageentry'               => 'bnetlib\Resource\Entity\D3\Item\SalvageEntry',
+        'd3.entity.item.salvageitem'                => 'bnetlib\Resource\Entity\D3\Item\SalvageItem',
+        'd3.entity.shared.act'                      => 'bnetlib\Resource\Entity\D3\Shared\Act',
+        'd3.entity.shared.difficulty'               => 'bnetlib\Resource\Entity\D3\Shared\Difficulty',
+        'd3.entity.shared.hero'                     => 'bnetlib\Resource\Entity\D3\Shared\Hero',
+        'd3.entity.shared.item'                     => 'bnetlib\Resource\Entity\D3\Shared\Item',
+        'd3.entity.shared.kills'                    => 'bnetlib\Resource\Entity\D3\Shared\Kills',
+        'd3.entity.shared.progress'                 => 'bnetlib\Resource\Entity\D3\Shared\Progress',
+        'd3.entity.shared.skill'                    => 'bnetlib\Resource\Entity\D3\Shared\Skill',
+        'shared.entity.data'                        => 'bnetlib\Resource\Entity\Shared\Data',
         'shared.entity.fallback'                    => 'bnetlib\Resource\Entity\Shared\Fallback',
         'shared.entity.image'                       => 'bnetlib\Resource\Entity\Shared\Image',
+        'shared.entity.listdata'                    => 'bnetlib\Resource\Entity\Shared\ListData',
         'wow.config.achievement'                    => 'bnetlib\Resource\Config\Wow\Achievement',
         'wow.config.arenaladder'                    => 'bnetlib\Resource\Config\Wow\ArenaLadder',
         'wow.config.arenateam'                      => 'bnetlib\Resource\Config\Wow\ArenaTeam',
@@ -149,10 +192,8 @@ class ServiceLocator implements ServiceLocatorInterface, LocaleAwareInterface
         'wow.entity.recipe'                         => 'bnetlib\Resource\Entity\Wow\Recipe',
         'wow.entity.shared.arenateam'               => 'bnetlib\Resource\Entity\Wow\Shared\ArenaTeam',
         'wow.entity.shared.character'               => 'bnetlib\Resource\Entity\Wow\Shared\Character',
-        'wow.entity.shared.data'                    => 'bnetlib\Resource\Entity\Wow\Shared\Data',
         'wow.entity.shared.guildemblem'             => 'bnetlib\Resource\Entity\Wow\Shared\GuildEmblem',
         'wow.entity.shared.item'                    => 'bnetlib\Resource\Entity\Wow\Shared\Item',
-        'wow.entity.shared.listdata'                => 'bnetlib\Resource\Entity\Wow\Shared\ListData',
     );
 
     /**
@@ -265,5 +306,15 @@ class ServiceLocator implements ServiceLocatorInterface, LocaleAwareInterface
         }
 
         return $this;
+    }
+
+    /**
+     * Returns every registered service in an array.
+     *
+     * @return array
+     */
+    public function getRegisteredServices()
+    {
+        return $this->services;
     }
 }

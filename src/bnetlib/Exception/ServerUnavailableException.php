@@ -21,7 +21,7 @@ namespace bnetlib\Exception;
  * @copyright 2012 Eric Boh <cossish@gmail.com>
  * @license   http://coss.gitbub.com/bnetlib/license.html    MIT License
  */
-class ServerUnavailableException extends RuntimeException implements ResponseExceptionInterface, ExceptionInterface
+class ServerUnavailableException extends RuntimeException implements ResponseExceptionInterface
 {
 
 }

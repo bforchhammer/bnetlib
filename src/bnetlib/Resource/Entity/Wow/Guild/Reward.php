@@ -38,7 +38,7 @@ class Reward implements EntityInterface
      */
     protected $services = array(
         'item'        => 'wow.entity.item.reward',
-        'races'       => 'wow.entity.shared.listdata',
+        'races'       => 'shared.entity.listdata',
         'achievement' => 'wow.entity.achievements.achievement',
 
     );

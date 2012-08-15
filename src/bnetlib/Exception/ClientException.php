@@ -21,7 +21,7 @@ namespace bnetlib\Exception;
  * @copyright 2012 Eric Boh <cossish@gmail.com>
  * @license   http://coss.gitbub.com/bnetlib/license.html    MIT License
  */
-class ClientException extends \Exception implements ResponseExceptionInterface, ExceptionInterface
+class ClientException extends \Exception implements ResponseExceptionInterface
 {
 
 }

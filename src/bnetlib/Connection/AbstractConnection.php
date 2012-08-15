@@ -18,6 +18,7 @@ namespace bnetlib\Connection;
 use bnetlib\Exception\JsonException;
 use bnetlib\Exception\CacheException;
 use bnetlib\Exception\DomainException;
+use bnetlib\Exception\LimitedModeException;
 use bnetlib\Exception\PageNotFoundException;
 use bnetlib\Exception\RequestsThrottledException;
 use bnetlib\Exception\ServerUnavailableException;
@@ -164,7 +165,7 @@ abstract class AbstractConnection implements ConnectionInterface
 
     /**
      * @param  boolean    $json
-     * @param  integer        $status
+     * @param  integer    $status
      * @param  string     $body
      * @param  array|null $headers
      * @return array
@@ -190,13 +191,20 @@ abstract class AbstractConnection implements ConnectionInterface
             case 400:
                 $this->identifyError($error, $status);
             case 404:
+                if (isset($body['code']) && $body['code'] === 'LIMITED') {
+                    throw new LimitedModeException($error, $status);
+                }
+
                 throw new PageNotFoundException($error, $status);
             case 429:
                 throw new RequestsThrottledException('The application or IP has been throttled.', $status);
             case 500:
                 $this->identifyError($error, $status);
             case 503:
-                throw new ServerUnavailableException('The server is currently unavailable.', $status);
+                throw new ServerUnavailableException(
+                    (isset($body['reason'])) ? $body['reason'] : 'The server is currently unavailable.',
+                    $status
+                );
             default:
                 throw new UnexpectedResponseException(
                     sprintf('Unexpected status code returned (%s).', $status),

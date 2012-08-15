@@ -111,6 +111,11 @@ foreach ($map as $class => $filename) {
         continue;
     }
 
+    // quick hack to remove the abstract class from the map.
+    if ($class === 'bnetlib\\Resource\\Entity\\D3\\Shared\\Heroes') {
+        continue;
+    }
+
     $service = $class;
     $service = str_replace('bnetlib\\resource\\', '', strtolower($service));
     $service = explode('\\', $service);

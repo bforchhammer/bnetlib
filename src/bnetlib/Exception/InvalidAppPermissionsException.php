@@ -21,7 +21,7 @@ namespace bnetlib\Exception;
  * @copyright 2012 Eric Boh <cossish@gmail.com>
  * @license   http://coss.gitbub.com/bnetlib/license.html    MIT License
  */
-class InvalidAppPermissionsException extends RuntimeException implements ResponseExceptionInterface, ExceptionInterface
+class InvalidAppPermissionsException extends RuntimeException implements ResponseExceptionInterface
 {
 
 }
