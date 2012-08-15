@@ -99,28 +99,6 @@ class Played implements EntityInterface, \IteratorAggregate
     }
 
     /**
-     * Returns an ordered array beginning with the most played and ending with
-     * the least played class. The key represents to class slug and the value
-     * the played time as percentage.
-     *
-     * @param  integer $precision The precision used by the round function.
-     * @return array
-     */
-    public function getPlayedClasses($precision = 0)
-    {
-        $data = array_map(
-            function ($value) use ($precision) {
-                round($value * 100, $precision);
-            },
-            $this->data
-        );
-
-        arsort($data);
-
-        return $data;
-    }
-
-    /**
      * @return array
      */
     public function toArray()
