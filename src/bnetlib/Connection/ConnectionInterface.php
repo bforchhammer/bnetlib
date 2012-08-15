@@ -26,7 +26,7 @@ interface ConnectionInterface
     /**
      * @var string
      */
-    const VERSION = '1.1.2';
+    const VERSION = '1.2';
 
     /**#@+
      * @var string
@@ -46,6 +46,16 @@ interface ConnectionInterface
     const HOST_KR = 'kr.battle.net';
     const HOST_TW = 'tw.battle.net';
     const HOST_CN = 'www.battlenet.com.cn';
+    /**#@-*/
+
+    /**#@+
+     * @var string
+     */
+    const HOST_MEDIA_US = 'us.media.blizzard.com';
+    const HOST_MEDIA_EU = 'eu.media.blizzard.com';
+    const HOST_MEDIA_KR = 'kr.media.blizzard.com';
+    const HOST_MEDIA_TW = 'tw.media.blizzard.com';
+    const HOST_MEDIA_CN = 'content.battlenet.com.cn';
     /**#@-*/
 
     /**#@+

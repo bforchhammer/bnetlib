@@ -1,0 +1,20 @@
+{
+    "content": {
+        "id": 33994,
+        "name": "Enchant Gloves - Precise Strikes",
+        "profession": "Enchanting",
+        "icon": "spell_holy_greaterheal"
+    },
+    "headers": {
+        "Date": "Wed, 15 Aug 2012 02:27:00 GMT",
+        "Server": "Apache",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Content-Language": "en-GB",
+        "Vary": "Accept-Encoding",
+        "Content-Encoding": "gzip",
+        "Content-Length": "118",
+        "Connection": "close",
+        "Content-Type": "application\/json;charset=utf-8",
+        "X-Pad": "avoid browser bug"
+    }
+}

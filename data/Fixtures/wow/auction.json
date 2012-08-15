@@ -1,0 +1,22 @@
+{
+    "content": {
+        "files": [
+            {
+                "url": "http:\/\/eu.battle.net\/auction-data\/51bb2dca8145b3d076c5f2a523461f05\/auctions.json",
+                "lastModified": 1344995128000
+            }
+        ]
+    },
+    "headers": {
+        "Date": "Wed, 15 Aug 2012 02:26:56 GMT",
+        "Server": "Apache",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Last-Modified": "Wed, 15 Aug 2012 01:45:28 GMT",
+        "Content-Language": "en-GB",
+        "Vary": "Accept-Encoding",
+        "Content-Encoding": "gzip",
+        "Content-Length": "131",
+        "Connection": "close",
+        "Content-Type": "application\/json;charset=utf-8"
+    }
+}

@@ -59,6 +59,7 @@ class Diablo extends AbstractGame
         ConnectionInterface::REGION_US => array(
             ConnectionInterface::LOCALE_US,
             ConnectionInterface::LOCALE_MX,
+            ConnectionInterface::LOCALE_BR,
         ),
         ConnectionInterface::REGION_EU => array(
             ConnectionInterface::LOCALE_GB,
@@ -66,9 +67,10 @@ class Diablo extends AbstractGame
             ConnectionInterface::LOCALE_FR,
             ConnectionInterface::LOCALE_RU,
             ConnectionInterface::LOCALE_DE,
+            ConnectionInterface::LOCALE_IT,
+            ConnectionInterface::LOCALE_PT,
         ),
         ConnectionInterface::REGION_KR => array(ConnectionInterface::LOCALE_KR),
         ConnectionInterface::REGION_TW => array(ConnectionInterface::LOCALE_TW),
-        ConnectionInterface::REGION_CN => array(ConnectionInterface::LOCALE_CN),
     );
 }

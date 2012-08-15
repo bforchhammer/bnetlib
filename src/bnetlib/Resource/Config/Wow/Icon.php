@@ -31,12 +31,12 @@ class Icon implements ConfigurationInterface
     /**
      * @var string
      */
-    const RESOURCE_URL = '/wow-assets/static/images/icons/%s/%s.jpg';
+    const RESOURCE_URL = '%s/wow/icons/%s/%s.jpg';
 
     /**
      * @var integer
      */
-    protected $resourceType = self::TYPE_DYNAMIC_PATH;
+    protected $resourceType = self::TYPE_DYNAMIC_URL;
 
     /**
      * @var array
@@ -46,7 +46,7 @@ class Icon implements ConfigurationInterface
     /**
      * @var array
      */
-    protected $requiredArguments = array('size', 'icon');
+    protected $requiredArguments = array('region', 'size', 'icon');
 
     /**
      * @var array
@@ -67,9 +67,19 @@ class Icon implements ConfigurationInterface
             return $v;
         };
 
+        $region = function ($v) {
+            $name = 'bnetlib\Connection\ConnectionInterface::HOST_MEDIA_' . strtoupper($v);
+            if (defined($name)) {
+                return constant($name);
+            }
+
+            throw new DomainException(sprintf('Unable to find a media host for %s.', $v));
+        };
+
         $this->manipulableArguments = array(
             'size'     => $size,
             'iconsize' => $size,
+            'region'   => $region,
         );
     }
 

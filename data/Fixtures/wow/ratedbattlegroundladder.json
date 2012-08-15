@@ -1,0 +1,158 @@
+{
+    "content": {
+        "bgRecord": [
+            {
+                "rank": 1,
+                "bgRating": 3911,
+                "wins": 39,
+                "losses": 7,
+                "played": 46,
+                "realm": {
+                    "name": "Stormscale",
+                    "slug": "stormscale",
+                    "battlegroup": "Cyclone \/ Wirbelsturm"
+                },
+                "battlegroup": {
+                    "name": "Cyclone \/ Wirbelsturm",
+                    "slug": "cyclone-wirbelsturm"
+                },
+                "character": {
+                    "name": "Skypepvptop",
+                    "realm": "Stormscale",
+                    "battlegroup": "Cyclone \/ Wirbelsturm",
+                    "class": 7,
+                    "race": 8,
+                    "gender": 1,
+                    "level": 85,
+                    "achievementPoints": 1020,
+                    "thumbnail": "stormscale\/2\/81697538-avatar.jpg"
+                },
+                "lastModified": 1344031232000
+            },
+            {
+                "rank": 2,
+                "bgRating": 3780,
+                "wins": 304,
+                "losses": 56,
+                "played": 360,
+                "realm": {
+                    "name": "Gordunni",
+                    "slug": "gordunni",
+                    "battlegroup": "\u0428\u043a\u0432\u0430\u043b"
+                },
+                "battlegroup": {
+                    "name": "\u0428\u043a\u0432\u0430\u043b",
+                    "slug": "\u0448\u043a\u0432\u0430\u043b"
+                },
+                "character": {
+                    "name": "\u0414\u043e\u043d\u0442\u0441\u043b\u0438\u043f",
+                    "realm": "Gordunni",
+                    "battlegroup": "\u0428\u043a\u0432\u0430\u043b",
+                    "class": 2,
+                    "race": 1,
+                    "gender": 1,
+                    "level": 85,
+                    "achievementPoints": 9990,
+                    "thumbnail": "gordunni\/110\/16505198-avatar.jpg"
+                },
+                "lastModified": 1337790996000
+            },
+            {
+                "rank": 3,
+                "bgRating": 3461,
+                "wins": 0,
+                "losses": 0,
+                "played": 0,
+                "realm": {
+                    "name": "Gordunni",
+                    "slug": "gordunni",
+                    "battlegroup": "\u0428\u043a\u0432\u0430\u043b"
+                },
+                "battlegroup": {
+                    "name": "\u0428\u043a\u0432\u0430\u043b",
+                    "slug": "\u0448\u043a\u0432\u0430\u043b"
+                },
+                "character": {
+                    "name": "\u041d\u0435\u0430\u0434\u0435\u043a\u0432\u0430\u0442\u043f\u0440\u043e",
+                    "realm": "Gordunni",
+                    "battlegroup": "\u0428\u043a\u0432\u0430\u043b",
+                    "class": 1,
+                    "race": 1,
+                    "gender": 0,
+                    "level": 85,
+                    "achievementPoints": 3525,
+                    "thumbnail": "gordunni\/252\/48841212-avatar.jpg"
+                },
+                "lastModified": 1330090840000
+            },
+            {
+                "rank": 4,
+                "bgRating": 3318,
+                "wins": 61,
+                "losses": 45,
+                "played": 106,
+                "realm": {
+                    "name": "Eredar",
+                    "slug": "eredar",
+                    "battlegroup": "Blutdurst"
+                },
+                "battlegroup": {
+                    "name": "Blutdurst",
+                    "slug": "blutdurst"
+                },
+                "character": {
+                    "name": "Kamikasu",
+                    "realm": "Eredar",
+                    "battlegroup": "Blutdurst",
+                    "class": 1,
+                    "race": 2,
+                    "gender": 0,
+                    "level": 85,
+                    "achievementPoints": 11000,
+                    "thumbnail": "eredar\/168\/54981544-avatar.jpg"
+                },
+                "lastModified": 1344165737000
+            },
+            {
+                "rank": 5,
+                "bgRating": 3153,
+                "wins": 59,
+                "losses": 15,
+                "played": 74,
+                "realm": {
+                    "name": "Al'Akir",
+                    "slug": "alakir",
+                    "battlegroup": "Blackout"
+                },
+                "battlegroup": {
+                    "name": "Blackout",
+                    "slug": "blackout"
+                },
+                "character": {
+                    "name": "Rockda",
+                    "realm": "Al'Akir",
+                    "battlegroup": "Blackout",
+                    "class": 1,
+                    "race": 2,
+                    "gender": 1,
+                    "level": 85,
+                    "achievementPoints": 3280,
+                    "thumbnail": "alakir\/160\/79290528-avatar.jpg"
+                },
+                "lastModified": 1344867198000
+            }
+        ]
+    },
+    "headers": {
+        "Date": "Wed, 15 Aug 2012 02:26:59 GMT",
+        "Server": "Apache",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Content-Language": "en-GB",
+        "Vary": "Accept-Encoding",
+        "Content-Encoding": "gzip",
+        "Content-Length": "660",
+        "Connection": "close",
+        "Content-Type": "application\/json;charset=utf-8",
+        "X-Pad": "avoid browser bug"
+    }
+}
