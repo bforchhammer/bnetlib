@@ -33,7 +33,7 @@ class Hero extends Shared\Hero
         'items'     => 'd3.entity.hero.items',
         'skills'    => 'd3.entity.hero.skills',
         'kills'     => 'd3.entity.shared.kills',
-        'progress'  => 'd3.entity.hero.progress',
+        'progress'  => 'd3.entity.shared.progress',
         'followers' => 'd3.entity.hero.followers',
     );
 
@@ -55,7 +55,7 @@ class Hero extends Shared\Hero
         }
 
         $this->data['dateTime'] = new \DateTime(
-            '@' . round(($data['lastUpdated'] / 1000), 0),
+            '@' . round(($data['last-updated'] / 1000), 0),
             new \DateTimeZone('UTC')
         );
     }

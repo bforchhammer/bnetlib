@@ -74,7 +74,7 @@ class SkillEntry implements EntityInterface
 				$class->setResponseHeaders($this->headers);
 			}
 
-			$class->populate($skill);
+			$class->populate($entry);
 
 			$this->data[$type]           = $class;
 			$this->index[$entry['slug']] = $class;
